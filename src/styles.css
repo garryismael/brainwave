@@ -7,6 +7,10 @@
     font-family: Sora, system-ui, sans-serif;
   }
 
+  body {
+    @apply text-white bg-deep-black;
+  }
+
   h1 {
     font-size: 60px;
     line-height: 72px;
@@ -69,6 +73,17 @@
 @layer components {
   .btn {
     @apply text-xs font-bold leading-5 uppercase font-sourceCodePro;
-    letter-spacing: 0.42px;
+  }
+
+  .border-t-b-gradient {
+    @apply relative flex items-center justify-center h-11;
+
+    &::before {
+      @apply content-[""] absolute top-0 left-0 h-0.5 w-full bg-gradient-top;
+    }
+
+    &::after {
+      @apply content-[""] absolute bottom-0 left-0 h-0.5 w-full bg-gradient-bottom;
+    }
   }
 }

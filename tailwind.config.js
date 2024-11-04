@@ -4,21 +4,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "dark-charcoal": "#26242c",
-        "deep-purple": "#0e0c15",
+        "deep-black": "#0e0c15",
         midnight: "#15131d",
-        "shadow-purple": "#252134",
-        "slate-gray": "#3f3a52",
-        "dusty-purple": "#757185",
+        "dark-purple": "#252134",
+        "dark-indigo": "#3f3a52",
+        "dark-grayish-purple": "#757185",
         "lavender-gray": "#ada8c3",
         "light-lavender": "#cac6dd",
         white: "#ffffff",
-        "deep-night": "#0e0c15",
-        "pink-blossom": "#ff98e2",
-        periwinkle: "#858dff",
-        "mint-green": "#7adb78",
-        coral: "#ff776f",
         "sunshine-yellow": "#ffc876",
+        coral: "#ff776f",
+        "mint-green": "#7adb78",
+        periwinkle: "#858dff",
+        "pink-blossom": "#ff98e2",
         violet: "#ac6aff",
       },
       fontFamily: {
@@ -40,6 +38,12 @@ module.exports = {
           },
         ],
         quote: ["18px", { lineHeight: "27px", fontWeight: "400" }],
+      },
+      backgroundImage: {
+        "gradient-top":
+          "linear-gradient(28.96deg, #89f9e8 13%, #9299fc 38%)",
+        "gradient-bottom":
+          "linear-gradient(28.96deg, #facb7c 13%, #d77dee 38%)",
       },
     },
   },
