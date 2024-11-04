@@ -1,3 +1,23 @@
+:root {
+  --dark-charcoal: #26242C;
+  --deep-purple: #0E0C15;
+  --midnight: #15131D;
+  --shadow-purple: #252134;
+  --slate-gray: #3F3A52;
+  --dusty-purple: #757185;
+  --lavender-gray: #ADA8C3;
+  --light-lavender: #CAC6DD;
+  --white: #FFFFFF;
+  --deep-night: #0E0C15;
+  --pink-blossom: #FF98E2;
+  --periwinkle: #858DFF;
+  --mint-green: #7ADB78;
+  --coral: #FF776F;
+  --sunshine-yellow: #FFC876;
+  --violet: #AC6AFF;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
