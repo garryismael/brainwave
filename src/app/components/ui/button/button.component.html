@@ -1,13 +1,15 @@
-<button class="btn btn-gradient">
+<button [ngClass]="buttonContainerClass" (click)="handleClick($event)">
   <img
-    src="/img/btn/left-gradient.svg"
+    ngSrc="/img/btn/left-gradient.svg"
     alt="left gradient"
     width="21"
     height="44"
   />
-  <ng-content/>
+  <span [ngClass]="buttonClass">
+    <ng-content/>
+  </span>
   <img
-    src="/img/btn/right-gradient.svg"
+    ngSrc="/img/btn/right-gradient.svg"
     alt="right gradient"
     width="21"
     height="44"

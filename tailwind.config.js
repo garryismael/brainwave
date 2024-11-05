@@ -40,10 +40,8 @@ module.exports = {
         quote: ["18px", { lineHeight: "27px", fontWeight: "400" }],
       },
       backgroundImage: {
-        "gradient-top":
-          "linear-gradient(28.96deg, #89f9e8 13%, #9299fc 38%)",
-        "gradient-bottom":
-          "linear-gradient(28.96deg, #facb7c 13%, #d77dee 38%)",
+        "gradient-top": "linear-gradient( to right, #89F9E8 36%, #9299FC 63%)",
+        "gradient-bottom": "linear-gradient( to right, #FACB7C 13%, #D77DEE 88%)",
       },
     },
   },

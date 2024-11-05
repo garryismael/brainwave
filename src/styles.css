@@ -68,6 +68,10 @@
   .quote {
     @apply text-quote font-sourceCodePro;
   }
+
+  .wrapper {
+    @apply max-w-[1920px] mx-auto px-1;
+  }
 }
 
 @layer components {

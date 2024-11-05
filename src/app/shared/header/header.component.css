@@ -1,6 +1,24 @@
 header {
-  @apply flex items-center justify-between w-full h-10 px-2 py-10;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  @apply absolute left-0 right-0 flex items-center justify-between w-full h-10 px-2 py-10 border-b border-b-white/10;
+  .wrapper {
+    @apply flex items-center justify-between w-full;
+
+    .menu {
+      @apply fixed bg-midnight top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center justify-center h-screen w-full;
+
+      &.inactive {
+        @apply hidden;
+      }
+
+      ul, .auth {
+        @apply flex flex-col gap-2;
+
+        a {
+          @apply text-xs font-semibold leading-5 uppercase font-sourceCodePro;
+        }
+      }
+    }
+  }
 }
 .icon {
   span {
