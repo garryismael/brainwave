@@ -12,7 +12,7 @@ const buttonStyles = cva('', {
   variants: {
     variant: {
       gradient: 'border-t-b-gradient',
-      white: 'bg-white',
+      white: 'btn-white text-deep-black',
     },
   },
   defaultVariants: {
@@ -39,7 +39,6 @@ const buttonStyles = cva('', {
 export class ButtonComponent {
   @Input() variant: 'gradient' | 'white' = 'gradient';
   @Input() classButtonContainer: string = '';
-  @Input() href: string = "";
   @Output() click: EventEmitter<any> = new EventEmitter();
 
   get buttonClass() {

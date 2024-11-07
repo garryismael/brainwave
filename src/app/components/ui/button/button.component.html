@@ -1,36 +1,15 @@
-@if (href !== "") {
-<a
-  [ngClass]="buttonContainerClass"
-  class="hover:text-violet"
-  [routerLink]="href"
->
-  @if (variant === "gradient") {
-  <span class="relative z-50"><svg-gradient-left /></span>
-  } @if (variant === "white") {
-  <svg-gradient-left />
-  }
-  <span [ngClass]="buttonClass">
-    <ng-content />
-  </span>
-  @if (variant === "gradient") {
-  <svg-gradient-right />
-  } @if (variant === "white") {
-  <svg-white-right />
-  }
-</a>
-} @else {
 <button
   [ngClass]="buttonContainerClass"
   class="hover:text-violet"
   (click)="handleClick($event)"
 >
   @if (variant === "gradient") {
-  <span class="relative z-50"><svg-gradient-left /></span>
-  } @if (variant === "white") {
   <svg-gradient-left />
+  } @if (variant === "white") {
+  <svg-white-left />
   }
   <span [ngClass]="buttonClass">
-    <ng-content />
+    <ng-content></ng-content>
   </span>
   @if (variant === "gradient") {
   <svg-gradient-right />
@@ -38,4 +17,3 @@
   <svg-white-right />
   }
 </button>
-}

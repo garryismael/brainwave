@@ -11,7 +11,6 @@ module.exports = {
         "dark-grayish-purple": "#757185",
         "lavender-gray": "#ada8c3",
         "light-lavender": "#cac6dd",
-        white: "#ffffff",
         "sunshine-yellow": "#ffc876",
         coral: "#ff776f",
         "mint-green": "#7adb78",

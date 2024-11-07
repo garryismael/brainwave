@@ -1,10 +1,10 @@
 header {
-  @apply absolute left-0 right-0 z-50 flex items-center justify-between w-full h-10 px-2 py-10 border-b border-b-white/10;
+  @apply fixed left-0 right-0 z-50 flex items-center justify-between w-full h-10 px-2 py-10 border-b bg-deep-black border-b-white/10;
   .wrapper {
     .logo {
       @apply flex items-center;
     }
-    @apply relative z-40 flex items-center justify-between w-full;
+    @apply relative flex items-center justify-between w-full;
 
     .navigation {
       @apply fixed w-0 lg:w-full h-screen lg:h-auto delay-100 overflow-hidden opacity-0 lg:opacity-100 flex flex-col justify-center gap-12 left-0 top-0 bottom-0 lg:flex-row lg:items-center lg:static lg:transform-none lg:left-0 lg:justify-between lg:flex-[0_0_70%] xl:flex-[0_0_65%];
