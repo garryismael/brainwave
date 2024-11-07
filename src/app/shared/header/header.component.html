@@ -1,26 +1,40 @@
 <header>
   <div class="wrapper">
-    <img ngSrc="/img/logo/logo-brainwave.svg" alt="logo" width="225" height="48" class="relative z-10"/>
-    <div class="menu" [ngClass]="menuClass">
-      <nav class="flex flex-col gap-6">
+    <div class="logo">
+      <img
+        ngSrc="/img/logo/logo-brainwave.svg"
+        priority
+        alt="logo"
+        width="225"
+        height="48"
+        class="relative z-10"
+      />
+    </div>
+    <div class="navigation" [class]="menuClass">
+      <nav>
         <ul>
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">How to use</a></li>
           <li><a href="#">Roadmap</a></li>
         </ul>
-        <ul>
-          <li><a href="#">New account</a></li>
-          <li><app-button variant="gradient">Sign in</app-button>
-          </li>
-        </ul>
+        <div class="auth">
+          <a href="#">New account</a>
+          <app-button variant="gradient">Sign in</app-button>
+        </div>
       </nav>
     </div>
-    <app-button variant="gradient" (click)="toggle()">
-      <span class="icon">
-        <span></span>
-        <span></span>
-      </span>
-    </app-button>
+    <div class="flex lg:hidden">
+      <app-button
+        variant="gradient"
+        classButtonContainer="flex"
+        (click)="toggle()"
+      >
+        <span class="icon">
+          <span></span>
+          <span></span>
+        </span>
+      </app-button>
+    </div>
   </div>
 </header>

@@ -1,25 +1,48 @@
 header {
-  @apply absolute left-0 right-0 flex items-center justify-between w-full h-10 px-2 py-10 border-b border-b-white/10;
+  @apply absolute left-0 right-0 z-50 flex items-center justify-between w-full h-10 px-2 py-10 border-b border-b-white/10;
   .wrapper {
-    @apply flex items-center justify-between w-full;
+    .logo {
+      @apply flex items-center;
+    }
+    @apply relative z-40 flex items-center justify-between w-full;
 
-    .menu {
-      @apply fixed bg-midnight top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center justify-center h-screen w-full;
+    .navigation {
+      @apply fixed w-0 lg:w-full h-screen lg:h-auto delay-100 overflow-hidden opacity-0 lg:opacity-100 flex flex-col justify-center gap-12 left-0 bottom-0 lg:flex-row lg:items-center lg:relative lg:transform-none lg:left-0 lg:justify-between lg:flex-[0_0_70%] xl:flex-[0_0_65%];
+      transition: all 600ms cubic-bezier(0.62, 0.04, 0.3, 1.56);
 
-      &.inactive {
-        @apply hidden;
+      nav {
+        @apply flex flex-col items-start lg:items-center justify-start gap-12 lg:gap-24 lg:flex-row lg:justify-between lg:w-full;
+
+        ul,
+        .auth {
+          a {
+            @apply text-xs font-semibold leading-5 uppercase font-sourceCodePro hover:text-violet;
+          }
+        }
+
+        ul {
+          @apply flex flex-col gap-4 lg:gap-12 xl:gap-24 lg:flex-row lg:items-center;
+        }
+
+        .auth {
+          @apply flex flex-col gap-6 lg:gap-8 lg:flex-row lg:items-center;
+        }
       }
 
-      ul, .auth {
-        @apply flex flex-col gap-2;
+      &.active {
+        @apply opacity-100  delay-100 lg:delay-0 w-full h-screen bg-midnight items-center;
+        animation: slideIn 0.6s cubic-bezier(0.62, 0.04, 0.3, 1.56);
+        animation-fill-mode: forwards;
+      }
 
-        a {
-          @apply text-xs font-semibold leading-5 uppercase font-sourceCodePro;
-        }
+      &.inactive {
+        @apply opacity-0 w-0 lg:opacity-100 delay-100 lg:delay-0;
+        animation: slideOut 0.6s cubic-bezier(0.62, 0.04, 0.3, 1.56) forwards;
       }
     }
   }
 }
+
 .icon {
   span {
     @apply block w-5 h-0.5 bg-white;
@@ -30,5 +53,28 @@ header {
     &:last-child {
       @apply translate-y-1;
     }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 0;
   }
 }
