@@ -1,7 +1,7 @@
 .hero-container {
   @apply h-full;
   .hero-border {
-    @apply flex flex-col rounded-xl relative;
+    @apply relative flex flex-col rounded-xl;
     padding: 2px;
     background: linear-gradient(
       to top right,
@@ -11,16 +11,16 @@
       #d77dee 88%
     );
     span {
-      @apply h-6 rounded-t-xl w-full;
+      @apply w-full h-6 rounded-t-xl;
       background: #1b1b2e;
     }
 
     .img-container {
-      @apply relative h-[400px] rounded-br-xl rounded-bl-xl overflow-y-hidden bg-clip-padding;
+      @apply relative h-[400px] rounded-br-xl rounded-bl-xl overflow-hidden bg-clip-padding;
 
       &::before {
         content: "";
-        @apply absolute -z-10 top-0 left-0 right-0 bottom-0;
+        @apply absolute top-0 bottom-0 left-0 right-0 -z-10;
         margin: -2px;
       }
     }
