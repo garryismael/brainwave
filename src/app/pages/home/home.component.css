@@ -1,0 +1,36 @@
+.hero-container {
+  @apply h-full;
+  .hero-border {
+    @apply flex flex-col rounded-xl relative;
+    padding: 2px;
+    background: linear-gradient(
+      to top right,
+      #facb7c 13%,
+      #89f9e8 36%,
+      #9299fc 63%,
+      #d77dee 88%
+    );
+    span {
+      @apply h-6 rounded-t-xl w-full;
+      background: #1b1b2e;
+    }
+
+    .img-container {
+      @apply relative h-[400px] rounded-br-xl rounded-bl-xl overflow-y-hidden bg-clip-padding;
+
+      &::before {
+        content: "";
+        @apply absolute -z-10 top-0 left-0 right-0 bottom-0;
+        margin: -2px;
+      }
+    }
+  }
+
+  .shape {
+    @apply bg-[#1B1B2E] h-6 w-[90%] mx-auto rounded-b-[30px];
+
+    &.second {
+      @apply w-[80%] opacity-50;
+    }
+  }
+}
