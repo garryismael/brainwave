@@ -1,7 +1,7 @@
 .hero-container {
-  @apply h-full;
+  @apply h-full mt-[38px];
   .hero-border {
-    @apply relative flex flex-col rounded-xl;
+    @apply relative z-[1] flex flex-col rounded-xl;
     padding: 2px;
     background: linear-gradient(
       to top right,
@@ -31,6 +31,30 @@
 
     &.second {
       @apply w-[80%] opacity-50;
+    }
+  }
+}
+
+.circle-container {
+  @apply absolute w-[78rem] -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2;
+
+  span {
+    @apply absolute border border-light-lavender/5 aspect-square w-[370px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full;
+
+    &.second {
+      width: 578px;
+    }
+
+    &.third {
+      width: 822px;
+    }
+
+    &.fourth {
+      width: 1054px;
+    }
+
+    &.fifth {
+      width: 1248px;
     }
   }
 }
