@@ -36,10 +36,10 @@
 }
 
 .circle-container {
-  @apply absolute w-[78rem] -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2;
+  @apply absolute w-[78rem] -translate-x-1/2 -translate-y-1/2 rounded-full top-[65%] left-1/2;
 
   span {
-    @apply absolute border border-light-lavender/5 aspect-square w-[370px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full;
+    @apply absolute border border-light-lavender/10 aspect-square w-[370px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full;
 
     &.second {
       width: 578px;

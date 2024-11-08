@@ -11,7 +11,7 @@ header {
       transition: all 600ms cubic-bezier(0.62, 0.04, 0.3, 1.56);
 
       nav {
-        @apply absolute left-1/2 top-1/2 flex flex-col -translate-y-1/2 -translate-x-1/2 lg:static lg:transform-none lg:items-center justify-start gap-12 lg:gap-24 lg:flex-row lg:justify-between lg:w-full;
+        @apply absolute flex flex-col justify-start gap-12 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 lg:static lg:transform-none lg:items-center lg:gap-24 lg:flex-row lg:justify-between lg:w-full;
 
         ul,
         .auth {
@@ -30,7 +30,7 @@ header {
       }
 
       &.active {
-        @apply opacity-100  delay-100 lg:delay-0 w-full h-screen bg-dark-purple items-center;
+        @apply items-center w-full h-screen delay-100 opacity-100 lg:delay-0 bg-dark-purple;
         animation: slideIn 0.6s cubic-bezier(0.62, 0.04, 0.3, 1.56);
         animation-fill-mode: forwards;
 
@@ -50,7 +50,7 @@ header {
       }
 
       &.inactive {
-        @apply opacity-0 w-0 lg:opacity-100 delay-150 lg:delay-0;
+        @apply w-0 delay-150 opacity-0 lg:opacity-100 lg:delay-0 -z-50;
         animation: slideOut 0.6s cubic-bezier(0.62, 0.04, 0.3, 1.56) forwards;
 
         * {
@@ -68,7 +68,7 @@ header {
           @apply absolute left-0 w-5 h-0.5 bg-white;
           transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
           &:first-child {
-            @apply -translate-y-1 -translate-x-1;
+            @apply -translate-x-1 -translate-y-1;
             transform: translateY(-4px);
             animation-delay: 100ms;
           }
