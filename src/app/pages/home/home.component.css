@@ -1,5 +1,5 @@
 .hero-container {
-  @apply h-full mt-[38px];
+  @apply h-full mt-[32px];
   .hero-border {
     @apply relative z-[1] flex flex-col rounded-xl;
     padding: 2px;
@@ -36,7 +36,7 @@
 }
 
 .circle-container {
-  @apply absolute w-[78rem] -translate-x-1/2 -translate-y-1/2 rounded-full top-[55%] left-1/2;
+  @apply absolute w-[78rem] -translate-x-1/2 -translate-y-1/2 rounded-full top-[58%] left-1/2;
 
   span {
     @apply absolute border border-light-lavender/10 aspect-square w-[370px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full;

@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'svg-white-left',
   standalone: true,
   imports: [],
-  templateUrl: './btn-white-left.component.html'
+  templateUrl: './btn-white-left.component.html',
 })
-export class SvgWhiteLeftComponent {
-
-}
+export class SvgWhiteLeftComponent {}

@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule, NgClass, NgOptimizedImage } from '@angular/common';
 import { cva } from 'class-variance-authority';
-import { cn } from '../../../../lib/utils';
+import { cn } from '@/lib/utils';
 import { SvgGradientRightComponent } from './svg-gradient-right/btn-gradient-right.component';
 import { SvgWhiteLeftComponent } from './svg-white-left/btn-white-left.component';
 import { SvgWhiteRightComponent } from './svg-white-right/btn-white-right.component';
