@@ -90,10 +90,6 @@
   .wrapper {
     @apply max-w-[1920px] mx-auto px-5;
   }
-
-  .gradient-1 {
-
-  }
 }
 
 @layer components {

@@ -1,5 +1,5 @@
 header {
-  @apply fixed left-0 top-0 right-0 z-50 flex items-center justify-between w-full h-10 px-2 py-10 border-b bg-deep-black border-b-white/10;
+  @apply fixed left-0 top-0 right-0 z-50 flex items-center justify-between w-full h-10 backdrop-blur-sm py-10 border-b bg-deep-black border-b-white/10;
   .wrapper {
     .logo {
       @apply flex items-center;
