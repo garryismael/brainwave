@@ -1,64 +1,80 @@
-<main class="relative overflow-hidden pb-8">
-  <div id="hero" class="relative flex flex-col text-center mt-[12rem]">
-    <div class="wrapper">
-      <div class="relative z-40 flex flex-col gap-8">
-        <h1>
-          Explore the Possibilities <br />
-          of AI Chatting with
-          <span class="relative inline-block">
-            Brainwave
-            <img
-              ngSrc="/img/hero/curve.png"
-              alt="curve"
-              width="640"
-              height="29"
-              class="absolute bottom-0 w-full h-auto top-full"
-            />
-          </span>
-        </h1>
-        <p class="body-1">
-          Unleash the power of AI within Brainwave. Upgrade your productivity with
-          Brainwave, the open AI chat app.
-        </p>
-        <div class="flex items-center justify-center">
-          <app-button variant="white" classButtonContainer="flex items-center">
-            <span>get started</span>
-          </app-button>
-        </div>
-        <div class="hero-container">
-          <div class="hero-border">
-            <span></span>
-            <div class="img-container">
-              <img
-                ngSrc="/img/hero/hero.png"
-                width="1664"
-                height="2432"
-                alt="hero"
-                class="rounded-bl-xl rounded-br-xl object-cover scale-[1.7] translate-y-[8%]"
-              />
-            </div>
-          </div>
-          <div class="shape first"></div>
-          <div class="shape second"></div>
-        </div>
+<section
+  id="hero"
+  class="relative mt-[8.25rem] md:mt-[9.75rem] lg:mt-[12.25rem] overflow-hidden"
+>
+  <div class="wrapper">
+    <div class="relative z-10 text-center">
+      <h1>
+        Explore the Possibilities <br />
+        of AI Chatting with
+        <span class="relative inline-block">
+          Brainwave
+          <img
+            ngSrc="/img/hero/curve.png"
+            alt="curve"
+            width="640"
+            height="29"
+            class="absolute bottom-0 w-full h-auto top-full"
+          />
+        </span>
+      </h1>
+      <p
+        class="body-1 my-6 lg:mt-8 max-w-[300px] mx-auto md:max-w-2xl lg:max-w-3xl"
+      >
+        Unleash the power of AI within Brainwave. Upgrade your productivity with
+        Brainwave, the open AI chat app.
+      </p>
+      <div class="inline-block">
+        <app-button variant="white" classButtonContainer="flex items-center">
+          <span>get started</span>
+        </app-button>
       </div>
     </div>
+    <div class="mt-16">
+      <div class="hero-border">
+        <span class="block h-6 w-full bg-dark-purple rounded-t-xl"></span>
+        <div
+          class="w-full relative aspect-[33/40] overflow-hidden rounded-b-xl"
+        >
+          <img
+            ngSrc="/img/hero/hero.png"
+            alt="Hero"
+            width="1664"
+            height="2432"
+            class="w-full scale-[1.7] translate-y-[8%] object-cover h-auto"
+          />
+          <div class="absolute bottom-5 left-3 right-3">
+            <div
+              class="flex items-center gap-4 bg-midnight/85 py-3 px-6 rounded-2xl backdrop-blur-[2px]"
+            >
+              <img
+                ngSrc="/img/ellipse.png"
+                alt="ellipse"
+                width="20"
+                height="20"
+              />
+              <p class="text-lg leading-8">
+                IA is generating<span class="animate-bounce">|</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span
+        class="block h-6 w-[90%] mx-auto bg-[#1B1B2E] rounded-b-[20px]"
+      ></span>
+      <span
+        class="block h-6 w-9/12 mx-auto opacity-50 bg-[#1B1B2E] rounded-b-[20px]"
+      ></span>
+    </div>
   </div>
-  <div class="absolute top-1/2 left-1/2 w-[140%] -translate-x-1/2">
-    <img ngSrc="/img/gradient-1.png" width="1417" height="1418" alt="gradient" class="absolute opacity-70 -top-16 left-1/2 -translate-x-1/2"/>
+  <div class="absolute top-[79%] -translate-y-1/2 -z-20 left-0 right-0 w-full">
     <img
       ngSrc="/img/hero/hero.png"
+      alt="Hero"
       width="1664"
       height="2432"
-      alt="hero"
-      class="opacity-[0.03] scale-[1.1] object-center"
+      class="w-full object-cover scale-[1.6] opacity-[0.03]"
     />
   </div>
-  <div class="circle-container">
-    <span class="first"></span>
-    <span class="second"></span>
-    <span class="third"></span>
-    <span class="fourth"></span>
-    <span class="fifth"></span>
-  </div>
-</main>
+</section>

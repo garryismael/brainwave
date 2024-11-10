@@ -1,8 +1,9 @@
-.hero-container {
-  @apply h-full mt-[32px];
-  .hero-border {
-    @apply relative z-[1] flex flex-col rounded-xl;
-    padding: 2px;
+.hero-border {
+  @apply relative p-0.5 z-10 overflow-hidden;
+
+  &::after {
+    content: "";
+    @apply absolute rounded-xl w-full inset-0 p-4 -z-10;
     background: linear-gradient(
       to top right,
       #facb7c 13%,
@@ -10,53 +11,5 @@
       #9299fc 63%,
       #d77dee 88%
     );
-    span {
-      @apply w-full h-6 rounded-t-xl;
-      background: rgb(67,67,92);
-    }
-
-    .img-container {
-      @apply relative h-[400px] rounded-br-xl rounded-bl-xl overflow-hidden bg-clip-padding;
-
-      &::before {
-        content: "";
-        @apply absolute top-0 bottom-0 left-0 right-0 -z-10;
-        margin: -2px;
-      }
-    }
-  }
-
-  .shape {
-    @apply bg-[#1B1B2E] h-6 w-[90%] mx-auto rounded-b-[30px];
-
-    &.second {
-      @apply w-[80%] opacity-50;
-    }
-  }
-}
-
-.circle-container {
-  @apply absolute w-[78rem] -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2;
-
-  span {
-    @apply absolute border border-light-lavender/10 aspect-square w-[370px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full;
-
-    &.second {
-      width: 578px;
-    }
-
-    &.third {
-      width: 822px;
-    }
-
-    &.fourth {
-      @apply hidden;
-      width: 1054px;
-    }
-
-    &.fifth {
-      @apply hidden;
-      width: 1248px;
-    }
   }
 }
