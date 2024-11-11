@@ -1,7 +1,4 @@
-<section
-  id="hero"
-  class="relative overflow-hidden"
->
+<section id="hero" class="relative overflow-hidden">
   <div class="wrapper pt-[9rem] md:pt-[9.75rem] lg:pt-[12.25rem]">
     <div class="relative z-10 text-center">
       <h1>
@@ -30,20 +27,20 @@
         </app-button>
       </div>
     </div>
-    <div class="mt-16">
+    <div class="mx-auto mt-16 relative z-10 max-w-[23rem] md:max-w-5xl xl:mb-24">
       <div class="hero-border">
         <span class="block w-full h-6 bg-dark-purple rounded-t-xl"></span>
         <div
-          class="w-full relative aspect-[33/40] overflow-hidden rounded-b-xl"
+          class="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[904/575]"
         >
           <img
             ngSrc="/img/hero/hero.png"
             alt="Hero"
             width="1664"
             height="2432"
-            class="w-full scale-[1.7] translate-y-[8%] object-cover h-auto"
+            class="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[20%]"
           />
-          <div class="absolute bottom-5 left-3 right-3">
+          <div class="absolute bottom-5 left-3 right-3 md:max-w-[488px] md:mx-auto md:left-0 md:right-0">
             <div
               class="flex items-center gap-4 bg-midnight/85 py-3 px-6 rounded-2xl backdrop-blur-[2px]"
             >
@@ -61,20 +58,20 @@
         </div>
       </div>
       <span
-        class="block h-6 w-[90%] mx-auto bg-[#1B1B2E] rounded-b-[20px]"
+        class="relative z-10 block h-6 w-[90%] mx-auto bg-[#1B1B2E] rounded-b-[20px]"
       ></span>
       <span
-        class="block h-6 w-9/12 mx-auto opacity-50 bg-[#1B1B2E] rounded-b-[20px]"
+        class="relative z-10 block h-6 w-9/12 mx-auto opacity-50 bg-[#1B1B2E] rounded-b-[20px]"
       ></span>
     </div>
   </div>
-  <div class="absolute left-0 right-0 w-full -translate-y-[37%] top-3/4 -z-20">
+  <div class="hero absolute left-0 right-0 w-full -translate-y-[37%] top-3/4 md:top-[73%] lg:top-[71%] xl:top-[56%] -z-20">
     <img
       ngSrc="/img/hero/hero.png"
       alt="Hero"
       width="1664"
       height="2432"
-      class="w-full object-cover scale-[1.4] opacity-[0.03]"
+      class="w-full object-cover scale-[1.4] opacity-[0.03] md:scale-[0.94] lg:scale-[0.97] xl:scale-[0.80]"
     />
   </div>
   <div class="pattern">
@@ -82,5 +79,6 @@
     <div class="ellipse-2"></div>
     <div class="ellipse-3"></div>
     <div class="ellipse-4"></div>
+    <div class="ellipse-5"></div>
   </div>
 </section>

@@ -15,13 +15,15 @@
 }
 
 .pattern {
-  @apply absolute z-0 -translate-x-1/2 -translate-y-1/2 bg-transparent top-1/2 left-1/2 aspect-square border-light-lavender/10 w-[78rem];
+  @apply absolute -z-10 -translate-x-1/2 -translate-y-1/2 bg-transparent top-1/2 lg:top-[40%] xl:top-[45%] left-1/2  max-w-[78rem];
+
+
   div {
-    @apply absolute z-0 -translate-x-1/2 -translate-y-1/2 border rounded-full top-1/2 left-1/2 aspect-square border-light-lavender/10;
+    @apply absolute -translate-x-1/2 -translate-y-1/2 border rounded-full -z-10 top-1/2 left-1/2 aspect-square border-light-lavender/10;
   }
 
   .ellipse-1 {
-    @apply   w-[370px];
+    @apply w-[370px];
   }
 
   .ellipse-2 {
@@ -33,6 +35,23 @@
   }
 
   .ellipse-4 {
-    @apply w-[1054px] hidden;
+    @apply w-[1054px] hidden xl:block;
   }
+
+  .ellipse-5 {
+    @apply w-[78rem] hidden xl:block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    @apply top-[48%];
+
+    img {
+      @apply scale-[0.53];
+    }
+  }
+    .pattern {
+      @apply top-[50%]
+    }
 }
