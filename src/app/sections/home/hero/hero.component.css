@@ -3,7 +3,7 @@
 
   &::after {
     content: "";
-    @apply absolute rounded-xl w-full inset-0 p-4 -z-10;
+    @apply absolute inset-0 w-full p-4 rounded-xl -z-10;
     background: linear-gradient(
       to top right,
       #facb7c 13%,
@@ -11,5 +11,28 @@
       #9299fc 63%,
       #d77dee 88%
     );
+  }
+}
+
+.pattern {
+  @apply absolute z-0 -translate-x-1/2 -translate-y-1/2 bg-transparent top-1/2 left-1/2 aspect-square border-light-lavender/10 w-[78rem];
+  div {
+    @apply absolute z-0 -translate-x-1/2 -translate-y-1/2 border rounded-full top-1/2 left-1/2 aspect-square border-light-lavender/10;
+  }
+
+  .ellipse-1 {
+    @apply   w-[370px];
+  }
+
+  .ellipse-2 {
+    @apply w-[578px];
+  }
+
+  .ellipse-3 {
+    @apply w-[822px];
+  }
+
+  .ellipse-4 {
+    @apply w-[1054px] hidden;
   }
 }
