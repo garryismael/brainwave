@@ -63,6 +63,9 @@
   @apply w-full h-auto scale-[1.46] md:scale-[0.93] lg:scale-[1.33] opacity-[0.03];
 }
 
+.bg-gradient {
+  @apply absolute left-[50%] -z-10 -top-28 md:-bottom-[25%] brightness-[128px] -translate-x-1/2;
+}
 @media only screen and (max-width: 320px) {
   .hero-bg-container {
     @apply -bottom-[7%];
