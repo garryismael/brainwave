@@ -1,17 +1,17 @@
-<section id="hero" class="relative overflow-hidden">
-  <div class="wrapper pt-[9rem] md:pt-[9.75rem] lg:pt-[12.25rem]">
+<section class="relative pt-[12.25rem] overflow-hidden" id="hero">
+  <div class="container mx-auto px-5 lg:px-0">
     <div class="relative z-10 text-center">
       <h1>
-        Explore the Possibilities <br />
+        Explore the Possibilities <br/>
         of AI Chatting with
         <span class="relative inline-block">
           Brainwave
           <img
-            ngSrc="/img/hero/curve.png"
             alt="curve"
-            width="640"
-            height="29"
             class="absolute bottom-0 w-full h-auto top-full"
+            height="29"
+            ngSrc="/img/hero/curve.png"
+            width="640"
           />
         </span>
       </h1>
@@ -22,33 +22,38 @@
         Brainwave, the open AI chat app.
       </p>
       <div class="inline-block">
-        <app-button variant="white" classButtonContainer="flex items-center">
+        <app-button classButtonContainer="flex items-center" variant="white">
           <span>get started</span>
         </app-button>
       </div>
     </div>
-    <div class="mx-auto mt-16 relative z-10 max-w-[23rem] md:max-w-5xl xl:mb-24">
+    <div
+      class="mx-auto mt-16 relative z-10 max-w-[23rem] md:max-w-5xl xl:mb-24"
+    >
+
       <div class="hero-border">
         <span class="block w-full h-6 bg-dark-purple rounded-t-xl"></span>
         <div
-          class="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[904/575]"
+          class="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1664/912] xl:aspect-[1664/812]"
         >
           <img
-            ngSrc="/img/hero/hero.png"
             alt="Hero"
-            width="1664"
+            class="w-full scale-[1.7] md:scale-[1] translate-y-[8%] md:-translate-y-[10%] lg:-translate-y-[20%] xl:-translate-y-[24%]"
             height="2432"
-            class="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[20%]"
+            ngSrc="/img/hero/hero.png"
+            width="1664"
           />
-          <div class="absolute bottom-5 left-3 right-3 md:max-w-[488px] md:mx-auto md:left-0 md:right-0">
+          <div
+            class="absolute bottom-5 left-3 right-3 md:max-w-[488px] md:mx-auto md:left-0 md:right-0"
+          >
             <div
-              class="flex items-center gap-4 bg-midnight/85 py-3 px-6 rounded-2xl backdrop-blur-[2px]"
+              class="flex items-center gap-4 bg-midnight/85 py-3 px-6 rounded-2xl md:rounded-3xl backdrop-blur-[2px]"
             >
               <img
-                ngSrc="/img/ellipse.png"
                 alt="ellipse"
-                width="20"
                 height="20"
+                ngSrc="/img/ellipse.png"
+                width="20"
               />
               <p class="text-lg leading-8">
                 IA is generating<span class="animate-bounce">|</span>
@@ -64,21 +69,14 @@
         class="relative z-10 block h-6 w-9/12 mx-auto opacity-50 bg-[#1B1B2E] rounded-b-[20px]"
       ></span>
     </div>
-  </div>
-  <div class="hero absolute left-0 right-0 w-full -translate-y-[37%] top-3/4 md:top-[73%] lg:top-[71%] xl:top-[56%] -z-20">
-    <img
-      ngSrc="/img/hero/hero.png"
-      alt="Hero"
-      width="1664"
-      height="2432"
-      class="w-full object-cover scale-[1.4] opacity-[0.03] md:scale-[0.94] lg:scale-[0.97] xl:scale-[0.80]"
-    />
-  </div>
-  <div class="pattern">
-    <div class="ellipse-1"></div>
-    <div class="ellipse-2"></div>
-    <div class="ellipse-3"></div>
-    <div class="ellipse-4"></div>
-    <div class="ellipse-5"></div>
+    <div class="hero-bg-container">
+      <img
+        alt="Hero"
+        class="hero-bg"
+        height="2432"
+        ngSrc="/img/hero/hero.png"
+        width="1664"
+      />
+    </div>
   </div>
 </section>

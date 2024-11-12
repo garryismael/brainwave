@@ -7,7 +7,7 @@ header {
     @apply relative flex items-center justify-between w-full;
 
     .navigation {
-      @apply fixed w-0 lg:w-full h-screen lg:h-auto delay-100 overflow-hidden opacity-0 lg:opacity-100 flex flex-col justify-center gap-12 left-0 top-0 bottom-0 lg:flex-row lg:items-center lg:static lg:transform-none lg:left-0 lg:justify-between lg:flex-[0_0_70%] xl:flex-[0_0_65%];
+      @apply fixed w-0 lg:w-full h-screen lg:h-auto delay-100 overflow-hidden opacity-0 lg:opacity-100 flex flex-col justify-center gap-12 left-0 top-0 bottom-0 lg:flex-row lg:items-center lg:static lg:transform-none lg:left-0 lg:justify-between lg:flex-[0_0_70%] 2xl:flex-[0_0_65%];
       transition: all 600ms cubic-bezier(0.62, 0.04, 0.3, 1.56);
 
       nav {
@@ -86,7 +86,7 @@ header {
 
 @keyframes slideIn {
   0% {
-    width: 0%;
+    width: 0;
     opacity: 0;
   }
 

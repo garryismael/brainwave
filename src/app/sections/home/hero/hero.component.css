@@ -55,3 +55,16 @@
       @apply top-[50%]
     }
 }
+
+.hero-bg-container {
+  @apply absolute z-0 w-full md:max-w-screen-md left-0 right-0 mx-auto -bottom-[10%] md:-bottom-[36%] lg:-bottom-[30%] xl:-bottom-[26%];
+}
+.hero-bg {
+  @apply w-full h-auto scale-[1.46] md:scale-[0.93] lg:scale-[1.33] opacity-[0.03];
+}
+
+@media only screen and (max-width: 320px) {
+  .hero-bg-container {
+    @apply -bottom-[7%];
+  }
+}
