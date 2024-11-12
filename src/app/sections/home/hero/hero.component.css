@@ -63,8 +63,18 @@
   @apply w-full h-auto scale-[1.46] md:scale-[0.93] lg:scale-[1.33] opacity-[0.03];
 }
 
+.faded-bg-left {
+  @apply absolute z-[1] -translate-x-1/2 left-0 bottom-0 top-0 w-[260px] h-full;
+  background: linear-gradient(180deg, rgba(14, 12, 21, 0.00) 0%, #0E0C15 100%);
+}
+
+.faded-bg-right {
+  @apply absolute z-[1] translate-x-[50%] right-0 bottom-0 top-0 w-[260px] h-full;
+  background: linear-gradient(180deg, rgba(14, 12, 21, 0.00) 0%, #0E0C15 100%);
+}
+
 .bg-gradient {
-  @apply absolute left-[50%] -z-10 -top-28 md:-bottom-[25%] brightness-[128px] -translate-x-1/2;
+  @apply absolute left-[50%] -z-10 -top-28 md:-bottom-[25%] backdrop-blur-[128px] -translate-x-1/2;
 }
 @media only screen and (max-width: 320px) {
   .hero-bg-container {
