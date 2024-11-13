@@ -17,6 +17,7 @@ module.exports = {
         periwinkle: "#858dff",
         "pink-blossom": "#ff98e2",
         violet: "#ac6aff",
+        "dark-grady": "#26242C"
       },
       fontFamily: {
         sora: ["Sora", "sans-serif", "system-ui"],

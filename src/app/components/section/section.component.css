@@ -1,0 +1,23 @@
+.inner {
+  @apply absolute hidden lg:block top-[80px] left-9 right-9 border border-dark-grady h-2/3;
+}
+
+.corner-top-left {
+  @apply absolute -left-1.5 -top-1 z-10;
+}
+.corner-top-right {
+  @apply absolute -right-1.5 -top-1 z-10;
+}
+
+.corner-bottom-left {
+  @apply absolute -left-1.5 -bottom-1 z-10;
+}
+.corner-bottom-right {
+  @apply absolute -right-1.5 -bottom-1 z-10;
+}
+
+@media (min-width: 1200px) {
+  .inner{
+    @apply left-5 right-5;
+  }
+}
