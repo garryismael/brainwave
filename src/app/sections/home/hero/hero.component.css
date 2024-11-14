@@ -1,3 +1,7 @@
+.tab-bar {
+  @apply hidden absolute text-white left-0 bottom-[18%]  z-20;
+}
+
 .hero-border {
   @apply relative p-0.5 z-10 overflow-hidden;
 
@@ -70,6 +74,11 @@
 }
 
 @media (min-width: 1200px) {
+  .tab-bar {
+    @apply flex items-center gap-6 p-4 rounded-2xl;
+    background: rgba(71, 64, 96, 0.37);
+    backdrop-filter: blur(16px)
+  }
   .pattern {
     @apply top-[44%];
 
