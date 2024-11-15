@@ -1,5 +1,9 @@
 .tab-bar {
-  @apply hidden absolute text-white left-0 bottom-[18%]  z-20;
+  @apply hidden absolute text-white -left-12 bottom-[18%]  z-20;
+}
+
+.code-generation {
+  @apply hidden absolute text-white -right-12 bottom-[26%]  z-20;
 }
 
 .hero-border {
@@ -75,10 +79,18 @@
 
 @media (min-width: 1200px) {
   .tab-bar {
-    @apply flex items-center gap-6 p-4 rounded-2xl;
+    @apply flex items-center gap-8 p-4 rounded-2xl;
     background: rgba(71, 64, 96, 0.37);
     backdrop-filter: blur(16px)
   }
+
+  .code-generation {
+    @apply flex items-center gap-5 rounded-2xl p-4;
+    background: rgba(71, 64, 96, 0.37);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
   .pattern {
     @apply top-[44%];
 

@@ -7,6 +7,7 @@ module.exports = {
         "deep-black": "#0e0c15",
         midnight: "#15131d",
         "dark-purple": "#252134",
+        "dark-violet": "#2E2A41",
         "dark-indigo": "#3f3a52",
         "dark-grayish-purple": "#757185",
         "lavender-gray": "#ada8c3",
@@ -17,7 +18,8 @@ module.exports = {
         periwinkle: "#858dff",
         "pink-blossom": "#ff98e2",
         violet: "#ac6aff",
-        "dark-grady": "#26242C"
+        "dark-grady": "#26242C",
+        "dark-white": "#6C7275"
       },
       fontFamily: {
         sora: ["Sora", "sans-serif", "system-ui"],
