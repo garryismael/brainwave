@@ -23,10 +23,10 @@
 }
 
 .hero-bg-container {
-  @apply absolute -z-10 w-full md:max-w-screen-md left-0 right-0 mx-auto -bottom-[10%] md:-bottom-[36%] lg:-bottom-[32%] xl:-bottom-[26%];
+  @apply absolute -z-10 w-full md:max-w-screen-lg lg:max-w-screen-md left-0 right-0 mx-auto -bottom-[10%] md:-bottom-[36%] lg:-bottom-1/3 xl:-bottom-[26%];
 }
 .hero-bg {
-  @apply w-full h-auto scale-[1.46] md:scale-[0.93] lg:scale-[1.26] opacity-[0.03];
+  @apply w-full h-auto scale-[1.46] md:scale-[0.87] lg:scale-[1.2] xl:scale-[0.95] opacity-[0.03];
 }
 
 .faded-bg-left {
